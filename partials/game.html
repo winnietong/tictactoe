@@ -1,0 +1,22 @@
+<div class="tictactoe center">
+    <h1>tic tac toe</h1>
+
+    <div ng-repeat="row in game.gameGrid track by $index">
+        <div ng-repeat="col in row track by $index" class="square"
+             ng-class="{'square-animated': col!='x' && col!='o'}"
+             ng-click="selectSquare(col);">
+            <p class="marker" ng-if="col=='x' || col=='o'" ng-bind="col"></p>
+        </div>
+    </div>
+
+    <div class="game-controls">
+        <button ng-click="newGame();" class="btn btn-info">reset</button>
+        <div class="score">
+            <span>Losses: {{game.lossCount}}</span>
+            <span>Draws: {{game.drawCount}}</span>
+        </div>
+        <div ng-if="game.gameDraw" ng-init="drawMethod();"></div>
+        <div ng-if="game.gameLose" ng-init="loseMethod();"></div>
+    </div>
+
+</div>

@@ -1,0 +1,39 @@
+.square {
+	width: 102px;
+	height: 100px;
+	background: #d2e1e5;
+    display: inline-block;
+    margin-right: 1px;
+    margin-top: -16px;
+}
+.square-animated:hover {
+  opacity: 0.6;
+}
+.center {
+    margin: auto;
+    width: 310px;
+}
+.marker {
+    position: absolute;
+    margin-left: 36px;
+    margin-top: 10px;
+}
+.tictactoe {
+    font-size: 50px;
+    color: white;
+}
+h1 {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+.game-controls {
+    font-size: 14px;
+}
+.score {
+    color: silver;
+    display: inline;
+    margin-left: 70px;
+}
+.score span {
+    margin-left: 25px;
+}
